@@ -298,10 +298,17 @@ function renderProducts(products, wa) {
     const tags = (p.tags || []).map(t => `<span class="prod-tag">✓ ${t}</span>`).join('');
     const btnDisabled = !inStock ? 'opacity:.5;pointer-events:none' : '';
     const msg = encodeURIComponent(p.waMsg || `Bonjour 👋, je souhaite commander *${p.name}* à ${fmtPrice(p.price)}. Disponible ?`);
+
+    // Affiche la vraie photo si disponible, sinon emoji sur fond coloré
+    const imgContent = p.image
+      ? `<img src="${p.image}" alt="${p.name}" style="width:100%;height:100%;object-fit:cover;display:block">`
+      : `<span class="prod-emoji" style="font-size:5rem;filter:drop-shadow(0 4px 12px rgba(0,0,0,.15))">${p.emoji}</span>`;
+    const imgBg = p.image ? '' : `background:${BG_COLORS[i % BG_COLORS.length]}`;
+
     return `
     <div class="product-card reveal">
-      <div class="prod-img" style="background:${BG_COLORS[i % BG_COLORS.length]}">
-        <span class="prod-emoji" style="font-size:5rem;filter:drop-shadow(0 4px 12px rgba(0,0,0,.15))">${p.emoji}</span>
+      <div class="prod-img" style="${imgBg}">
+        ${imgContent}
         <span class="prod-num">${p.badge || ''}</span>
       </div>
       <div class="prod-body">
@@ -319,7 +326,6 @@ function renderProducts(products, wa) {
     </div>`;
   }).join('');
 
-  // Re-observe reveal
   const obs = new IntersectionObserver(e => e.forEach(x => { if(x.isIntersecting) x.target.classList.add('visible'); }), {threshold:.1});
   document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
 }

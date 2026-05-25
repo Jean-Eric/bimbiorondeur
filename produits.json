@@ -1,0 +1,61 @@
+{
+  "lastUpdated": "2025-05-25",
+  "products": [
+    {
+      "id": "p1",
+      "name": "Gélules BBL Importées",
+      "emoji": "💊",
+      "price": 5000,
+      "stock": 0,
+      "desc": "Gélules importées spécialement conçues pour vous faire prendre du poids, grossir le fessier et élargir le bassin. Très efficace.",
+      "tags": ["Fessier", "Prise de poids", "Bassin"],
+      "badge": "Best-seller",
+      "waMsg": "Bonjour 👋, je souhaite commander les *Gélules BBL Importées* à 5 000 FCFA. Disponible ?"
+    },
+    {
+      "id": "p2",
+      "name": "Sirop Fessier aux Plantes",
+      "emoji": "🍶",
+      "price": 5000,
+      "stock": 0,
+      "desc": "Sirop 100% naturel à base de plantes pour grossir le fessier, élargir le bassin et dégraisser le ventre. Très efficace.",
+      "tags": ["Fessier", "Ventre plat", "Bassin"],
+      "badge": "Plantes",
+      "waMsg": "Bonjour 👋, je souhaite commander le *Sirop Fessier* à 5 000 FCFA. Disponible ?"
+    },
+    {
+      "id": "p3",
+      "name": "Protéine Curves Boost",
+      "emoji": "💪",
+      "price": 5000,
+      "stock": 0,
+      "desc": "Favorise le développement naturel et le volume de vos fesses. Tonifie et raffermit les muscles. Formule 100% naturelle. 500g.",
+      "tags": ["Volume ciblé", "Muscle", "Naturel"],
+      "badge": "Curves Boost",
+      "waMsg": "Bonjour 👋, je souhaite commander la *Protéine Curves Boost* à 5 000 FCFA. Disponible ?"
+    },
+    {
+      "id": "p4",
+      "name": "Suppo Fessier aux Plantes",
+      "emoji": "🌺",
+      "price": 5000,
+      "stock": 0,
+      "desc": "Suppositoires à base de plantes conçus pour galber le fessier, refermer les creux et sculpter vos formes naturellement.",
+      "tags": ["Galbe", "Creux", "Sculpture"],
+      "badge": "Plantes",
+      "waMsg": "Bonjour 👋, je souhaite commander le *Suppo Fessier* à 5 000 FCFA. Disponible ?"
+    },
+    {
+      "id": "p5",
+      "name": "Poudre Africaine Naturelle",
+      "emoji": "🌿",
+      "price": 5000,
+      "stock": 0,
+      "desc": "Poudre africaine traditionnelle pour prendre du poids naturellement. Stimule l'appétit et favorise une prise de masse harmonieuse.",
+      "tags": ["Poids naturel", "Appétit", "Traditionnel"],
+      "badge": "Traditionnel",
+      "waMsg": "Bonjour 👋, je souhaite commander la *Poudre Africaine* à 5 000 FCFA. Disponible ?"
+    }
+  ],
+  "whatsapp": "+2250505573598"
+}
